@@ -162,11 +162,11 @@ void bai10() {
   stdout.write('Nhập tuổi của bạn: ');
   int age = int.parse(stdin.readLineSync()!);
   stdout.write('Nhập city của bạn: ');
-  String city = stdin.readLineSync()!;
+  String anddress = stdin.readLineSync()!;
 
   infomation['name'] = name;
   infomation['age'] = age;
-  infomation['city'] = city;
+  infomation['anddress'] = anddress;
 
   infomation.forEach((key, value) {
     print('$key: $value');
@@ -178,8 +178,21 @@ void bai10() {
   });
 }
 
+void tham_so_bat_buoc(String name) {
+  print('Họ tên: $name');
+}
+
+void tham_so_mac_dinh(String name, [int? age, String? anddress]) {
+  print('Họ tên: $name, Tuổi: $age, Địa chỉ: $anddress');
+}
+
+void tham_so_tuy_chon(String name,
+    {int age = 15, String anddress = 'Thanh Hoa'}) {
+  print('Họ tên: $name, Tuổi: $age, Địa chỉ: $anddress');
+}
+
 void main() {
-  int? chon;
+  int chon;
   do {
     print('===========================');
     print('1. Mừng thọ 100 tuổi');
