@@ -1,6 +1,6 @@
 import 'dart:io';
 
-class SinhVien {
+abstract class SinhVien {
   late String _maSv, _tenSv, _lop;
   late int _tuoi;
 
@@ -41,4 +41,7 @@ class SinhVien {
   String toString() {
     return 'Sinh viên {Mã SV= $_maSv, Họ tên= $_tenSv, Tuổi= $_tuoi, Lớp= $_lop}';
   }
+
+  void demo_abstract1();
+  void demo_abstract2();
 }

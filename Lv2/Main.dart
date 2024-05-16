@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'Qlsv.dart';
 
 void main() {
@@ -17,6 +16,7 @@ void main() {
     print('8. Sắp xếp nhân viên theo tuổi');
     print('9. Hiển thị 5 sinh viên giỏi');
     print('10. Khởi tạo danh sách sinh viên');
+    print('11. Mixin');
     print('0. Thoát chương trình');
     print('===========================');
     stdout.write('Chọn chức năng[0-10]: ');
@@ -44,8 +44,17 @@ void main() {
       case 7:
         ql.sortNameStudent();
         break;
+      case 8:
+        ql.sortAgeStudent();
+        break;
+      case 9:
+        ql.seeGoodList();
+        break;
       case 10:
         ql.initializeStudents();
+        break;
+      case 11:
+        ql.demo_mixin();
         break;
       default:
     }
